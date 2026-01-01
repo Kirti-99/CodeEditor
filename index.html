@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code editor | JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="../../BootStrap/bootstrap-5.3.8-dist/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <i class="fa-solid fa-code"></i>
+                <label>HTML</label>
+                <textarea id="html_code" onkeyup="run()"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <i class="fa-brands fa-css3"></i>
+                <label>CSS</label>
+                <textarea id="css_code" onkeyup="run()"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <i class="fa-brands fa-js"></i>
+                <label>JavaScript</label>
+                <textarea id="js_code" onkeyup="run()"></textarea>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="iframe_label">
+                <i class="fa-solid fa-play"></i>
+                <label>Output</label>
+            </div>
+                <iframe id="output"></iframe>
+            </div>
+    </div>
+</body>
+</html>
